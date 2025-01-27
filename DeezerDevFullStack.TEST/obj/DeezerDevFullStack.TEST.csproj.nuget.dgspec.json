@@ -25,7 +25,17 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.BL/DeezerDevFullStack.BL.csproj": {
+                "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.BL/DeezerDevFullStack.BL.csproj"
+              },
+              "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DAL/DeezerDevFullStack.DAL.csproj": {
+                "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DAL/DeezerDevFullStack.DAL.csproj"
+              },
+              "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/DeezerDevFullStack.DTO.csproj": {
+                "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/DeezerDevFullStack.DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -97,8 +107,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.API/DeezerDevFullStack.API.csproj": {
-                "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.API/DeezerDevFullStack.API.csproj"
+              "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DAL/DeezerDevFullStack.DAL.csproj": {
+                "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DAL/DeezerDevFullStack.DAL.csproj"
+              },
+              "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/DeezerDevFullStack.DTO.csproj": {
+                "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/DeezerDevFullStack.DTO.csproj"
               }
             }
           }
@@ -159,8 +172,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.API/DeezerDevFullStack.API.csproj": {
-                "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.API/DeezerDevFullStack.API.csproj"
+              "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/DeezerDevFullStack.DTO.csproj": {
+                "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/DeezerDevFullStack.DTO.csproj"
               }
             }
           }
@@ -220,11 +233,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.API/DeezerDevFullStack.API.csproj": {
-                "projectPath": "/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.API/DeezerDevFullStack.API.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -316,6 +325,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.8.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
             },
             "NUnit": {
               "target": "Package",

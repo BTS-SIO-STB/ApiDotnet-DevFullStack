@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeezerDevFullStack.TEST")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf0e9a06885a1d8a305d7f8abbca401f4ff52df4")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeezerDevFullStack.TEST")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeezerDevFullStack.TEST")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
