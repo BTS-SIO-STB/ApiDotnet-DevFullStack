@@ -1,0 +1,6 @@
+@DeezerDevFullStack.API_HostAddress = http://localhost:5128
+
+GET {{DeezerDevFullStack.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
