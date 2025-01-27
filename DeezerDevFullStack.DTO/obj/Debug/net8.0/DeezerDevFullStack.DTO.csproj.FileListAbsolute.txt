@@ -1,0 +1,12 @@
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/bin/Debug/net8.0/DeezerDevFullStack.DTO.deps.json
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/bin/Debug/net8.0/DeezerDevFullStack.DTO.dll
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/bin/Debug/net8.0/DeezerDevFullStack.DTO.pdb
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/obj/Debug/net8.0/DeezerDevFullStack.DTO.GeneratedMSBuildEditorConfig.editorconfig
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/obj/Debug/net8.0/DeezerDevFullStack.DTO.AssemblyInfoInputs.cache
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/obj/Debug/net8.0/DeezerDevFullStack.DTO.AssemblyInfo.cs
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/obj/Debug/net8.0/DeezerDevFullStack.DTO.csproj.CoreCompileInputs.cache
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/obj/Debug/net8.0/DeezerDevFullStack.DTO.sourcelink.json
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/obj/Debug/net8.0/DeezerDevFullStack.DTO.dll
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/obj/Debug/net8.0/refint/DeezerDevFullStack.DTO.dll
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/obj/Debug/net8.0/DeezerDevFullStack.DTO.pdb
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DTO/obj/Debug/net8.0/ref/DeezerDevFullStack.DTO.dll

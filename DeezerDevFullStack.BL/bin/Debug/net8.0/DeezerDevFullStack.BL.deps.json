@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DeezerDevFullStack.BL/1.0.0": {
+        "dependencies": {
+          "DeezerDevFullStack.DAL": "1.0.0",
+          "DeezerDevFullStack.DTO": "1.0.0"
+        },
+        "runtime": {
+          "DeezerDevFullStack.BL.dll": {}
+        }
+      },
+      "DeezerDevFullStack.DAL/1.0.0": {
+        "dependencies": {
+          "DeezerDevFullStack.DTO": "1.0.0"
+        },
+        "runtime": {
+          "DeezerDevFullStack.DAL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DeezerDevFullStack.DTO/1.0.0": {
+        "runtime": {
+          "DeezerDevFullStack.DTO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DeezerDevFullStack.BL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DeezerDevFullStack.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DeezerDevFullStack.DTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

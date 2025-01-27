@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/DeezerDevFullStack.API.props" />
+</Project>
