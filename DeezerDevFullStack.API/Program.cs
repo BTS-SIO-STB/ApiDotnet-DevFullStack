@@ -9,8 +9,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Register the DeezerApiService and ArtistSearchService
-builder.Services.AddHttpClient<IServiceDeezer, ArtistSearchService>();
-builder.Services.AddScoped<IServiceDeezer, ArtistSearchService>();
+builder.Services.AddHttpClient<IServiceDeezer, ArtistService>();
+builder.Services.AddScoped<IServiceDeezer, ArtistService>();
 
 // Add controllers
 builder.Services.AddControllers();
