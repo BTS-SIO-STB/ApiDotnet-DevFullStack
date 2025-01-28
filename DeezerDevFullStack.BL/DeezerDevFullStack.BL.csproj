@@ -3,6 +3,9 @@
       <ProjectReference Include="..\DeezerDevFullStack.DAL\DeezerDevFullStack.DAL.csproj" />
       <ProjectReference Include="..\DeezerDevFullStack.DTO\DeezerDevFullStack.DTO.csproj" />
     </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="System.Text.Json" Version="9.0.1" />
+    </ItemGroup>
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>

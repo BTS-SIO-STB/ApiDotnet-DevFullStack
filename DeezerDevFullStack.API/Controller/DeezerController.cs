@@ -26,5 +26,18 @@ namespace DeezerDevFullStack.API.Controller
         {
             return await _artistService.GetSongsByArtistId(artistId);
         }
+        
+        [HttpPost("save-songs/{songIds}")]
+        public async Task<IActionResult> SaveSongs(int songIds)
+        {
+            await _artistService.SaveSongToPlaylist(songIds);
+            return Ok();
+        }
+        
+        [HttpGet("playlist/songs")]
+        public async Task<IEnumerable<Song>> GetSongsFromPlaylist()
+        {
+            return await _artistService.GetSongsFromPlaylist();
+        }
     }
 }

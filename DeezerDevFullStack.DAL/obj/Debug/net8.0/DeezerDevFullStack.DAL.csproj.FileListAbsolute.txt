@@ -14,3 +14,5 @@
 /home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DAL/bin/Debug/net8.0/DeezerDevFullStack.DTO.pdb
 /home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DAL/obj/Debug/net8.0/DeezerDevFullStack.DAL.csproj.AssemblyReference.cache
 /home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DAL/obj/Debug/net8.0/DeezerDe.4BB6A12C.Up2Date
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DAL/bin/Debug/net8.0/DeezerDevFullStack.DAL.runtimeconfig.json
+/home/mirage/Documents/project/program language/school/tech/MG/DeezerDevFullStack.API/DeezerDevFullStack.DAL/obj/Debug/net8.0/DeezerDevFullStack.DAL.genruntimeconfig.cache

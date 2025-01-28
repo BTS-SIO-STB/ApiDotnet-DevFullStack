@@ -1,8 +1,14 @@
-﻿namespace DeezerDevFullStack.DTO;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-public class Song
+namespace DeezerDevFullStack.DTO
 {
-    public int Id { get; set; }
-    public string Title { get; set; }
-    public int ArtistId { get; set; }
+    public class Song
+    {
+        public int Id { get; set; }
+        public string? Title { get; set; }
+        public int ArtistId { get; set; }
+        public string? SongUrl { get; set; }
+        public Artist Artist { get; set; }
+    }
 }

@@ -1,19 +1,32 @@
-using DeezerDevFullStack.BL;
 using DeezerDevFullStack.DAL;
+using DeezerDevFullStack.BL;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Register the DeezerApiService and ArtistSearchService
-builder.Services.AddHttpClient<IServiceDeezer, ArtistService>();
-builder.Services.AddScoped<IServiceDeezer, ArtistService>();
+// Register the DbContext with the connection string
+builder.Services.AddDbContext<DeezerDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Add controllers
-builder.Services.AddControllers();
+// Register other services
+builder.Services.AddScoped<IDataDeezer, ArtistRepository>();
+builder.Services.AddHttpClient<IServiceDeezer, ArtistService>();
+
+// Add CORS services
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", builder =>
+    {
+        builder.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
 
@@ -26,6 +39,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapControllers();
+// Apply the CORS policy
+app.UseCors("AllowAllOrigins");
 
+app.MapControllers();
 app.Run();
