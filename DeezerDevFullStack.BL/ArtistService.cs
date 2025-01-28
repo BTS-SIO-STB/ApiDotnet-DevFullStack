@@ -1,6 +1,6 @@
 ﻿using DeezerDevFullStack.DTO;
+using DeezerDevFullStack.DAL;
 using System.Text.Json;
-using System.Net.Http;
 
 namespace DeezerDevFullStack.BL
 {
@@ -8,15 +8,19 @@ namespace DeezerDevFullStack.BL
     {
         Task<IEnumerable<Artist>> SearchArtists(string name);
         Task<IEnumerable<Song>> GetSongsByArtistId(int artistId);
+        Task SaveSongToPlaylist(int songId);
+        Task<IEnumerable<Song>> GetSongsFromPlaylist();
     }
     
     public class ArtistService : IServiceDeezer
     {
         private readonly HttpClient _httpClient;
+        private readonly IDataDeezer _dataDeezer;
 
-        public ArtistService(HttpClient httpClient)
+        public ArtistService(HttpClient httpClient, IDataDeezer dataDeezer)
         {
             _httpClient = httpClient;
+            _dataDeezer = dataDeezer;
         }
 
         public async Task<IEnumerable<Artist>> SearchArtists(string name)
@@ -39,9 +43,10 @@ namespace DeezerDevFullStack.BL
                     Name = element.GetProperty("name").GetString()
                 }).ToList();
 
+            await _dataDeezer.SaveArtists(artists);
             return artists;
         }
-        
+
         public async Task<IEnumerable<Song>> GetSongsByArtistId(int artistId)
         {
             var response = await _httpClient.GetAsync($"https://api.deezer.com/artist/{artistId}/top?limit=10");
@@ -62,17 +67,28 @@ namespace DeezerDevFullStack.BL
                     {
                         return new Song
                         {
-                            Id = id,
                             Title = element.GetProperty("title").GetString(),
-                            ArtistId = artistId
+                            ArtistId = artistId,
+                            SongUrl = element.GetProperty("link").GetString()
                         };
                     }
                     return null;
                 })
-                .Where(song => song != null)
+                .Where(song => song != null && !string.IsNullOrEmpty(song.Title))
                 .ToList();
 
-            return songs;
+            var savedSongs = await _dataDeezer.SaveSongs(songs);
+            return savedSongs;
+        }
+        
+        public async Task SaveSongToPlaylist(int songId)
+        {
+            await _dataDeezer.SaveSongToPlaylist(songId);
+        }
+        
+        public async Task<IEnumerable<Song>> GetSongsFromPlaylist()
+        {
+            return await _dataDeezer.GetSongsFromPlaylist();
         }
     }
 }
